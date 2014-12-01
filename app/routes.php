@@ -2,5 +2,5 @@
 
 Toro::serve(array(
   '/' => 'HomeController',
-  '/products/:product' => 'HomeController',
+  '/products/:product' => 'ProductsController',
 ));

@@ -9,7 +9,7 @@ class HomeController extends BaseController {
     $data = [
       'page_title' => 'Lowman Market',
       'title' => 'Lowman Products',
-      'products' => Home::products()
+      'products' => Product::products()
     ];
     echo $this->twig->render('home.html', $data);
   }

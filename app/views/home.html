@@ -1,7 +1,10 @@
 {% include '_header.html' %}
 
-        {% for products in product %}
+        {% for product in products %}
           {{ product.title|e }}
+          {% for image in product.images %}
+          	{{ image }}
+          {% endfor %}
         {% endfor %}
         
 {% include '_footer.html' %}
